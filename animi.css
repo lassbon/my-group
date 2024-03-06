@@ -1,0 +1,130 @@
+.bounce {
+    /* background-color: aqua;
+    color: white; */
+    transform: translateX(40px);
+    transform: rotate(200deg);
+    
+  }
+  
+  .ball {
+    margin: 400px 0;
+    width: 100px;
+    height: 100px;
+    background-color: #27ae60;
+    animation: ball 3s infinite;
+    border-radius: 40px;
+  }
+  
+  @keyframes ball {
+  
+    100% {
+      transform: translateY(2);
+    }
+  
+    40% {
+      transform: translateY(-400px);
+    }
+  
+    60% {
+      transform: translateY(-35px);
+    }
+  }
+  
+  .play {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 400px;
+    bottom: 100px;
+    background-color: pink;
+    animation: ball 2s infinite;
+    border-radius: 50px;
+  }
+  
+  @keyframes play {
+    From{
+      transform: translateY(0.5px); 
+     }
+     to{
+      Transform: translateY(-100px);
+     }
+     to{
+     transform: translateY(500px);
+   }
+  }
+  
+  .move {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(223, 0, 12, 0.6);
+    animation-name: move;
+    animation-duration: 1s;
+    transition: 2s ease-out 1s;
+    border-radius: 50px;
+  }
+  
+  
+  
+  @keyframes move {
+    From{
+      transform: translateX(0px); 
+     }
+     to{
+      Transform: translateX(700px);
+     }
+    }
+  
+  
+    .moving {
+      background-color: #78290f;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      left: 670px;
+      top: 0;
+      animation-name: move;
+      animation-duration: 7s;
+      transition: 1s ease-out 3s;
+      border-radius: 50px;
+    }
+    
+    
+    
+    @keyframes moving {
+      From{
+        transform: translateX(0px);
+      
+       }
+       to{
+        Transform: translateX(500px);
+        
+       }
+       to{
+        Transform: translateX(700px);
+        
+       }
+      }
+  
+  
+      .mv {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 800px;
+        bottom: 100px;
+        background-color:darkorchid;
+        animation: ball 4s infinite;
+        border-radius: 50px;
+      }
+      
+      @keyframes mv {
+        From{
+          transform: translateY(7px); 
+         }
+         to{
+          Transform: translateY(-50px);
+         }
+         to{
+         transform: translateY(-100px);
+       }
+      }
