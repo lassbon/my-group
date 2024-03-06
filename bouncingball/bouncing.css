@@ -1,0 +1,156 @@
+section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  #touch {
+    margin-top: 200px;
+    display: flex;
+  }
+  
+  #bounce {
+    height: 100%;
+    display: flex;
+    margin-bottom: 200px;
+    gap: 50px;
+  }
+  
+  .ball1 {
+    background-color: #3498db;
+    animation: rollRight 5s linear infinite;
+    position: absolute;
+    left: 0;
+  }
+  
+  .ball2 {
+    background-color: #1ca751;
+    animation: rollRight2 5s linear infinite;
+    animation-delay: 2.5s;
+  }
+  
+  .ball3 {
+    background-color: #dde023;
+    animation: bb 1s linear infinite;
+    animation-delay: 1.7s;
+  }
+  
+  .ball4 {
+    background-color: #f63333;
+    animation: bb2 1s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  .ball5 {
+    background-color: #a640fa;
+    animation: bb3 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+  
+  .ball6 {
+    background-color: #2969fe;
+    animation: bb4 1s linear infinite;
+    animation-delay: 2.2s;
+  }
+  
+  .inner1 {
+    background-color: #0478c56b;
+  }
+  
+  .inner2 {
+    background-color: #017e316b;
+  }
+  
+  .inner3 {
+    background-color: #b8bb006b;
+  }
+  
+  .inner4 {
+    background-color: #c7000070;
+  }
+  
+  .inner5 {
+    background-color: #7301cf6a;
+  }
+  
+  .inner6 {
+    background-color: #0142db6b;
+  }
+  
+  .in {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    left: 5%;
+    top: 5%;
+  }
+  
+  .ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  #touch {
+    margin-top: 200px;
+    display: flex;
+  }
+  
+  @keyframes rollRight {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(42.5vw);
+    }
+  }
+  
+  @keyframes rollRight2 {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(45vw);
+    }
+  }
+  
+  @keyframes bb {
+    from {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(300px);
+    }
+  }
+  
+  @keyframes bb2 {
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(300px);
+      }
+    }
+  
+  @keyframes bb3 {
+      from {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(300px);
+      }
+    }
+  
+  @keyframes bb4 {
+      from {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(300px);
+      }
+    }
